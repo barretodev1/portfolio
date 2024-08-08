@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,7 +22,7 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Caio Barreto</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -76,7 +77,7 @@
       <h1 class="title">Sobre Mim</h1>
       <div class="section-container">
         <div class="section__pic-container">
-          <img
+          <img data-aos="fade-right"
             src="./assets/about-pic.png"
             alt="Profile picture"
             class="about-pic"
@@ -113,12 +114,7 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
+     
     </section>
     <section id="experience">
       <p class="section__text__p1">Conheça minhas</p>
@@ -240,19 +236,36 @@
                 />
                 <div>
                   <h3>Git</h3>
-                  <p>Intermediate</p>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Django</h3>
+                  <p>Intermediário</p>
                 </div>
               </article>
             </div>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+     
     </section>
     <section id="projects">
       <p class="section__text__p1">Meus recentes</p>
@@ -263,30 +276,30 @@
             <div class="article-container">
               <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">Projeto Um</h2>
+            <h2 class="experience-sub-title project-title">Advocacia</h2>
             <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/barretodev1/To-Do-List'">Github</button>
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://todolistdev122.netlify.app/'">Site</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/barretodev1/advocaciaBarreto'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://advocaciabarreto.netlify.app/'">Site</button>
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
               <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">Projeto Dois</h2>
+            <h2 class="experience-sub-title project-title">LinkTree</h2>
             <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/barretodev1/Clima-Tempo'">Github</button>
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://climetempodev1.netlify.app/'">Site</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/barretodev1/linktree'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://mylinktreebarreto.netlify.app/'">Site</button>
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
-              <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+              <img src="./assets/restaurante.jpg" alt="Project 3" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">Projeto Três</h2>
+            <h2 class="experience-sub-title project-title">Restaurante</h2>
             <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/barretodev1/meuReactt'">Github</button>
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://projetobarreto.netlify.app/'">Site</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/barretodev1/restaurante'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://myrestaurantebarreto.netlify.app/'">Site</button>
             </div>
           </div>
           <!-- Projeto Quatro adicionado aqui -->
@@ -294,25 +307,20 @@
             <div class="article-container">
               <img src="./assets/micro.png" alt="Project 4" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">Projeto Quatro</h2>
+            <h2 class="experience-sub-title project-title">Microsoft</h2>
             <div class="btn-container">
               <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/barretodev1/cloneMicrosoft'">Github</button>
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://microsoftbarreto.netlify.app/'">Site</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://microsoftbarreto1.netlify.app/'">Site</button>
             </div>
           </div>
+
         </div>
       </div>
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
     </section>
     
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
+      
     </section>
     <section id="contact">
       <p class="section__text__p1">Toque aqui para</p>
@@ -348,7 +356,9 @@
         </div>
       </nav>
       <p>Copyright &#169; @brtwrld.</p>
-    </footer>
-    <script src="script.js"></script>
+      
+    </footer> 
+    <script src="script.js">
+    </script>
   </body>
 </html>
